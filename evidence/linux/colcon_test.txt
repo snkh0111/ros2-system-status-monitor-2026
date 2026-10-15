@@ -1,0 +1,12 @@
+Starting >>> status_publisher
+--- stderr: status_publisher
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK
+---
+Finished <<< status_publisher [0.26s]
+
+Summary: 1 package finished [0.51s]
+  1 package had stderr output: status_publisher

@@ -1,6 +1,6 @@
 # Ubuntu22.04与ROS2 Humble运行说明
 
-以下Linux构建、ROS通信及GUI命令尚未在本机执行。
+2026-10-15已在本机Ubuntu22.04.5虚拟机完成两包构建、真实ROS通信及Qt虚拟显示自动测试。结果与限制见validation_results.md及evidence/linux。
 
 ## 系统准备
 
@@ -9,7 +9,7 @@
 
 ## 安装
 
-已通过[官方文档仓库源文件](https://raw.githubusercontent.com/ros2/ros2_documentation/humble/source/Installation/_Apt-Repositories.rst)核验当前使用ros2-apt-source配置密钥与仓库。附带的 `docs/install_humble.sh` 实现UTF-8 locale、universe及ROS仓库配置、系统升级和依赖安装。它尚未在Ubuntu执行；先阅读脚本，然后在项目根目录运行 `bash docs/install_humble.sh`。脚本会执行系统升级，请留出安装时间并检查apt输出。
+已通过[官方文档仓库源文件](https://raw.githubusercontent.com/ros2/ros2_documentation/humble/source/Installation/_Apt-Repositories.rst)核验当前使用ros2-apt-source配置密钥与仓库。附带的 `docs/install_humble.sh` 实现UTF-8 locale、universe及ROS仓库配置、系统升级和依赖安装。该脚本已在本次Ubuntu虚拟机执行；新环境仍应先阅读脚本，然后在项目根目录运行 `bash docs/install_humble.sh`。脚本会执行系统升级，请留出安装时间并检查apt输出。
 
 如果已按官方步骤配置好ROS仓库，下面命令也可单独安装所需依赖：
 

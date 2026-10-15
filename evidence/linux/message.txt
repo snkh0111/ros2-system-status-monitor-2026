@@ -1,0 +1,11 @@
+stamp:
+  sec: 1792032263
+  nanosec: 521173532
+hostname: examvm
+cpu_percent: 15.100000381469727
+memory_percent: 24.100000381469727
+memory_total: 4106964992
+memory_available: 3116658688
+net_sent: 8318636
+net_recv: 749167261
+---

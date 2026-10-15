@@ -1,0 +1,6 @@
+Starting >>> status_interfaces
+Finished <<< status_interfaces [1.75s]
+Starting >>> status_publisher
+Finished <<< status_publisher [1.33s]
+
+Summary: 2 packages finished [3.38s]

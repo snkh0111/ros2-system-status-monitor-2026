@@ -1,0 +1,11 @@
+WARNING: topic [/system_status] does not appear to be published yet
+average rate: 1.000
+	min: 1.000s max: 1.000s std dev: 0.00016s window: 3
+average rate: 1.000
+	min: 1.000s max: 1.001s std dev: 0.00031s window: 5
+average rate: 1.000
+	min: 0.999s max: 1.001s std dev: 0.00052s window: 7
+average rate: 1.000
+	min: 0.999s max: 1.001s std dev: 0.00053s window: 9
+average rate: 1.000
+	min: 0.999s max: 1.001s std dev: 0.00050s window: 11

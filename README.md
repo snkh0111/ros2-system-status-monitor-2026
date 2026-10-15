@@ -10,6 +10,9 @@ Ubuntu22.04 + ROS2 Humble两包工程：status_interfaces定义8字段消息，s
 
 ```bash
 source /opt/ros/humble/setup.bash
+# First setup only; skip init when already initialized.
+sudo rosdep init
+rosdep update
 cd ros2_workspace
 rosdep install --from-paths src --ignore-src -r -y
 colcon build --symlink-install --packages-select status_interfaces status_publisher
@@ -23,7 +26,7 @@ ros2 run status_publisher sys_status_pub
 ## 真实验证状态
 
 5项独立逻辑/结构测试通过；Windows真实Qt控件与真实psutil采集已验证，ROS层为测试替代，不能代替Humble集成。公开日志见evidence。
-Ubuntu22.04.5虚拟机已安装，真实Humble构建、通信和GUI验收正在进行。当前不声称这些Linux测试已通过，完成后更新结果。
+Ubuntu22.04.5/Humble真实两包构建、自定义消息、约1.000Hz频率及真实ROS+Qt虚拟显示自动验收已通过，Linux截图和日志见evidence/linux，详情见[验证记录](docs/validation_results.md)。未测试长时人工交互与实车部署。colcon test发现0项，不作为单元测试通过。rosdep update网络TLS失败，依赖已通过apt安装后构建成功。首次GUI失败与进程清理修复记录已保留。
 
 Linux配置就绪后从项目根目录执行bash docs/verify_ros2.sh保存构建、接口、消息、频率与测试记录；source工作空间后可用xvfb-run -a python3 tests/test_ros2_live.py执行真实ROS+Qt测试。
 

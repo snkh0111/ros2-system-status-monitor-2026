@@ -14,9 +14,9 @@ source install/setup.bash
 ros2 interface show status_interfaces/msg/SystemStatus | tee ../evidence/linux/interface.txt
 colcon test --packages-select status_publisher 2>&1 | tee ../evidence/linux/colcon_test.txt
 colcon test-result --verbose 2>&1 | tee ../evidence/linux/test_results.txt
-ros2 run status_publisher sys_status_pub > ../evidence/linux/publisher.txt 2>&1 &
+setsid ros2 run status_publisher sys_status_pub > ../evidence/linux/publisher.txt 2>&1 &
 publisher_pid=$!
-trap 'kill "$publisher_pid" 2>/dev/null || true' EXIT
+trap 'kill -INT -- -"$publisher_pid" 2>/dev/null || true; wait "$publisher_pid" 2>/dev/null || true' EXIT
 timeout 20 ros2 topic echo /system_status --once | tee ../evidence/linux/message.txt
 # A timeout is expected after enough samples; other errors must fail the script.
 set +e

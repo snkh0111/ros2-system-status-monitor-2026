@@ -1,0 +1,14 @@
+{
+  "recorded_at": "2026-10-15T10:44:47.662580+08:00",
+  "scope": "Actual Humble publisher/subscriber, actual psutil and Qt",
+  "checks": [
+    "ROS2 message reception",
+    "derived rate",
+    "resize",
+    "publisher timer stop/stale",
+    "restart/recovery",
+    "close"
+  ],
+  "result": "PASS",
+  "limitation": "Automated virtual display; not long-duration manual latency evaluation"
+}
