@@ -1,0 +1,18 @@
+{
+  "scope": "Real PyQt5 window + real psutil Windows samples; ROS test doubles",
+  "platform_plugin": "windows",
+  "checks": [
+    "waiting",
+    "all field rendering",
+    "units",
+    "initial rate",
+    "subsequent rate",
+    "resize",
+    "stale state",
+    "resume",
+    "close"
+  ],
+  "result": "PASS",
+  "poll_count": 10,
+  "limitation": "Not ROS2 discovery, transport, colcon, or interactive latency verification"
+}

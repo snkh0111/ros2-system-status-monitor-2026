@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>status_publisher</name><version>0.1.0</version>
+  <description>ROS2 host status collector and Qt monitor.</description>
+  <maintainer email="maintainer@example.invalid">Project maintainer pending confirmation</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_python</buildtool_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>status_interfaces</exec_depend>
+  <exec_depend>python3-psutil</exec_depend>
+  <exec_depend>python3-pyqt5</exec_depend>
+  <test_depend>python3-pytest</test_depend>
+  <export><build_type>ament_python</build_type></export>
+</package>

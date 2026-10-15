@@ -1,0 +1,10 @@
+test_interface_schema_and_package_manifests (__main__.CoreTests.test_interface_schema_and_package_manifests) ... ok
+test_network_unavailable_is_error (__main__.CoreTests.test_network_unavailable_is_error) ... ok
+test_python_syntax (__main__.CoreTests.test_python_syntax) ... ok
+test_rates_and_invalid_intervals (__main__.CoreTests.test_rates_and_invalid_intervals) ... ok
+test_sampling_units_precision_and_cpu_priming (__main__.CoreTests.test_sampling_units_precision_and_cpu_priming) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.271s
+
+OK
